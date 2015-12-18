@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		327149651C23A59D00421132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149641C23A59D00421132 /* AppDelegate.swift */; };
-		327149671C23A59D00421132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149661C23A59D00421132 /* ViewController.swift */; };
+		327149671C23A59D00421132 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149661C23A59D00421132 /* LoginViewController.swift */; };
 		3271496A1C23A59D00421132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327149681C23A59D00421132 /* Main.storyboard */; };
 		3271496C1C23A59D00421132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3271496B1C23A59D00421132 /* Assets.xcassets */; };
 		3271496F1C23A59D00421132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3271496D1C23A59D00421132 /* LaunchScreen.storyboard */; };
 		3271497A1C23A59E00421132 /* IceBreakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149791C23A59E00421132 /* IceBreakerTests.swift */; };
 		327149851C23A59E00421132 /* IceBreakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149841C23A59E00421132 /* IceBreakerUITests.swift */; };
+		327149931C23A80900421132 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327149921C23A80900421132 /* MapKit.framework */; };
+		327149951C23AAB100421132 /* PeopleNearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149941C23AAB100421132 /* PeopleNearbyViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		327149971C23ADF300421132 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149961C23ADF300421132 /* PersonTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		327149991C23B13200421132 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149981C23B13200421132 /* PersonDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		327149611C23A59D00421132 /* IceBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		327149641C23A59D00421132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		327149661C23A59D00421132 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		327149661C23A59D00421132 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		327149691C23A59D00421132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3271496B1C23A59D00421132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3271496E1C23A59D00421132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		327149801C23A59E00421132 /* IceBreakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceBreakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		327149841C23A59E00421132 /* IceBreakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceBreakerUITests.swift; sourceTree = "<group>"; };
 		327149861C23A59E00421132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327149921C23A80900421132 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		327149941C23AAB100421132 /* PeopleNearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleNearbyViewController.swift; sourceTree = "<group>"; };
+		327149961C23ADF300421132 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		327149981C23B13200421132 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327149931C23A80900421132 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +86,7 @@
 		327149581C23A59D00421132 = {
 			isa = PBXGroup;
 			children = (
+				327149921C23A80900421132 /* MapKit.framework */,
 				327149631C23A59D00421132 /* IceBreaker */,
 				327149781C23A59E00421132 /* IceBreakerTests */,
 				327149831C23A59E00421132 /* IceBreakerUITests */,
@@ -98,7 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				327149641C23A59D00421132 /* AppDelegate.swift */,
-				327149661C23A59D00421132 /* ViewController.swift */,
+				327149661C23A59D00421132 /* LoginViewController.swift */,
+				327149941C23AAB100421132 /* PeopleNearbyViewController.swift */,
+				327149961C23ADF300421132 /* PersonTableViewCell.swift */,
+				327149981C23B13200421132 /* PersonDetailViewController.swift */,
 				327149681C23A59D00421132 /* Main.storyboard */,
 				3271496B1C23A59D00421132 /* Assets.xcassets */,
 				3271496D1C23A59D00421132 /* LaunchScreen.storyboard */,
@@ -255,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				327149671C23A59D00421132 /* ViewController.swift in Sources */,
+				327149671C23A59D00421132 /* LoginViewController.swift in Sources */,
 				327149651C23A59D00421132 /* AppDelegate.swift in Sources */,
+				327149971C23ADF300421132 /* PersonTableViewCell.swift in Sources */,
+				327149991C23B13200421132 /* PersonDetailViewController.swift in Sources */,
+				327149951C23AAB100421132 /* PeopleNearbyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
