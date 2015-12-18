@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="svW-xt-ZST">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -85,18 +84,39 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qMw-SD-Kna">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCD-bC-15E">
-                                <rect key="frame" x="550" y="550" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCD-bC-15E">
+                                <rect key="frame" x="550" y="501" width="30" height="30"/>
                                 <state key="normal" title="+"/>
+                            </button>
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" text="Search" translatesAutoresizingMaskIntoConstraints="NO" id="ynP-Fl-Z8i">
+                                <rect key="frame" x="77" y="28" width="446" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwf-NB-cs2">
+                                <rect key="frame" x="523" y="35" width="57" height="30"/>
+                                <state key="normal" title="Settings"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhO-Xj-Yud">
+                                <rect key="frame" x="20" y="35" width="57" height="30"/>
+                                <state key="normal" title="Profile"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ynP-Fl-Z8i" firstAttribute="top" secondItem="Zxi-8y-8u9" secondAttribute="bottom" constant="8" id="ADi-ck-l3A"/>
                             <constraint firstItem="z9c-AX-VUV" firstAttribute="top" secondItem="qMw-SD-Kna" secondAttribute="bottom" id="AGV-zx-Wqo"/>
+                            <constraint firstAttribute="trailing" secondItem="fwf-NB-cs2" secondAttribute="trailing" constant="20" id="BZw-O7-WoL"/>
+                            <constraint firstItem="yhO-Xj-Yud" firstAttribute="leading" secondItem="v4X-Rn-hMV" secondAttribute="leading" constant="20" id="Fhk-HW-LGb"/>
                             <constraint firstItem="qMw-SD-Kna" firstAttribute="top" secondItem="v4X-Rn-hMV" secondAttribute="top" id="FlN-wY-piP"/>
+                            <constraint firstItem="yhO-Xj-Yud" firstAttribute="top" secondItem="Zxi-8y-8u9" secondAttribute="bottom" constant="15" id="Fma-at-2Le"/>
+                            <constraint firstItem="ynP-Fl-Z8i" firstAttribute="centerX" secondItem="v4X-Rn-hMV" secondAttribute="centerX" id="JAH-cm-AKH"/>
+                            <constraint firstItem="fwf-NB-cs2" firstAttribute="top" secondItem="Zxi-8y-8u9" secondAttribute="bottom" constant="15" id="Wso-Bv-aLG"/>
                             <constraint firstItem="qMw-SD-Kna" firstAttribute="leading" secondItem="v4X-Rn-hMV" secondAttribute="leading" id="Y0h-5z-oMp"/>
                             <constraint firstAttribute="trailing" secondItem="vCD-bC-15E" secondAttribute="trailing" constant="20" id="dml-DD-tMV"/>
+                            <constraint firstItem="ynP-Fl-Z8i" firstAttribute="leading" secondItem="yhO-Xj-Yud" secondAttribute="trailing" id="eYW-RV-jYM"/>
                             <constraint firstItem="z9c-AX-VUV" firstAttribute="top" secondItem="vCD-bC-15E" secondAttribute="bottom" constant="20" id="ku2-NI-hCN"/>
+                            <constraint firstItem="fwf-NB-cs2" firstAttribute="leading" secondItem="ynP-Fl-Z8i" secondAttribute="trailing" id="lMW-br-9O5"/>
                             <constraint firstAttribute="trailing" secondItem="qMw-SD-Kna" secondAttribute="trailing" id="lP2-11-PI7"/>
                         </constraints>
                     </view>
@@ -194,10 +214,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="People Nearby" id="2OJ-lp-uEq">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Your Contacts" id="Y8h-aL-JtD"/>
-                            <barButtonItem title="Settings" id="PX5-tB-63D"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Your Contacts" id="Y8h-aL-JtD"/>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="MS9-ai-1fN" id="vR1-r4-iiZ"/>
