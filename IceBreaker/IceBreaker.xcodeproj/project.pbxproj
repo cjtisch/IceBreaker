@@ -18,6 +18,7 @@
 		327149951C23AAB100421132 /* PeopleNearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149941C23AAB100421132 /* PeopleNearbyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		327149971C23ADF300421132 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149961C23ADF300421132 /* PersonTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		327149991C23B13200421132 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149981C23B13200421132 /* PersonDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		741651FBA0579992F8ACF368 /* Pods_IceBreaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221AD7F58B98CD57B750FF90 /* Pods-IceBreaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBreaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IceBreaker/Pods-IceBreaker.debug.xcconfig"; sourceTree = "<group>"; };
 		327149611C23A59D00421132 /* IceBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		327149641C23A59D00421132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		327149661C23A59D00421132 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,8 @@
 		327149941C23AAB100421132 /* PeopleNearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleNearbyViewController.swift; sourceTree = "<group>"; };
 		327149961C23ADF300421132 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		327149981C23B13200421132 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		33F1358DA5E88A95CE03CF43 /* Pods-IceBreaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBreaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceBreaker/Pods-IceBreaker.release.xcconfig"; sourceTree = "<group>"; };
+		3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IceBreaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				327149931C23A80900421132 /* MapKit.framework in Frameworks */,
+				741651FBA0579992F8ACF368 /* Pods_IceBreaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2858AA86C906EEB8E8F7D1D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		327149581C23A59D00421132 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,8 @@
 				327149781C23A59E00421132 /* IceBreakerTests */,
 				327149831C23A59E00421132 /* IceBreakerUITests */,
 				327149621C23A59D00421132 /* Products */,
+				568CD43B16E834949185767F /* Pods */,
+				2858AA86C906EEB8E8F7D1D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +153,15 @@
 			path = IceBreakerUITests;
 			sourceTree = "<group>";
 		};
+		568CD43B16E834949185767F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				221AD7F58B98CD57B750FF90 /* Pods-IceBreaker.debug.xcconfig */,
+				33F1358DA5E88A95CE03CF43 /* Pods-IceBreaker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 327149891C23A59E00421132 /* Build configuration list for PBXNativeTarget "IceBreaker" */;
 			buildPhases = (
+				E03A8C74F3CD687F1D374A0A /* Check Pods Manifest.lock */,
 				3271495D1C23A59D00421132 /* Sources */,
 				3271495E1C23A59D00421132 /* Frameworks */,
 				3271495F1C23A59D00421132 /* Resources */,
+				76D3EF5DB7F0F873FA4EE402 /* Embed Pods Frameworks */,
+				019E59654AD890B8EE1774F7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +289,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		019E59654AD890B8EE1774F7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IceBreaker/Pods-IceBreaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76D3EF5DB7F0F873FA4EE402 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IceBreaker/Pods-IceBreaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E03A8C74F3CD687F1D374A0A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3271495D1C23A59D00421132 /* Sources */ = {
@@ -410,6 +485,7 @@
 		};
 		3271498A1C23A59E00421132 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221AD7F58B98CD57B750FF90 /* Pods-IceBreaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IceBreaker/Info.plist;
@@ -421,6 +497,7 @@
 		};
 		3271498B1C23A59E00421132 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F1358DA5E88A95CE03CF43 /* Pods-IceBreaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IceBreaker/Info.plist;
@@ -497,6 +574,7 @@
 				3271498B1C23A59E00421132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3271498C1C23A59E00421132 /* Build configuration list for PBXNativeTarget "IceBreakerTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +583,7 @@
 				3271498E1C23A59E00421132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3271498F1C23A59E00421132 /* Build configuration list for PBXNativeTarget "IceBreakerUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +592,7 @@
 				327149911C23A59E00421132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
