@@ -18,6 +18,16 @@
 		327149951C23AAB100421132 /* PeopleNearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149941C23AAB100421132 /* PeopleNearbyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		327149971C23ADF300421132 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149961C23ADF300421132 /* PersonTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		327149991C23B13200421132 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149981C23B13200421132 /* PersonDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3290B9C51C4342610001F7EC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9BC1C4342610001F7EC /* AudioToolbox.framework */; };
+		3290B9C61C4342610001F7EC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9BD1C4342610001F7EC /* CFNetwork.framework */; };
+		3290B9C71C4342610001F7EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9BE1C4342610001F7EC /* CoreGraphics.framework */; };
+		3290B9C81C4342610001F7EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9BF1C4342610001F7EC /* CoreLocation.framework */; };
+		3290B9C91C4342610001F7EC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9C01C4342610001F7EC /* libsqlite3.tbd */; };
+		3290B9CA1C4342610001F7EC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9C11C4342610001F7EC /* libz.tbd */; };
+		3290B9CB1C4342610001F7EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9C21C4342610001F7EC /* Security.framework */; };
+		3290B9CC1C4342610001F7EC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9C31C4342610001F7EC /* StoreKit.framework */; };
+		3290B9CD1C4342610001F7EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9C41C4342610001F7EC /* SystemConfiguration.framework */; };
+		3290B9D01C4344E60001F7EC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290B9CF1C4344E60001F7EC /* Profile.swift */; settings = {ASSET_TAGS = (); }; };
 		741651FBA0579992F8ACF368 /* Pods_IceBreaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +67,16 @@
 		327149941C23AAB100421132 /* PeopleNearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleNearbyViewController.swift; sourceTree = "<group>"; };
 		327149961C23ADF300421132 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		327149981C23B13200421132 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		3290B9BC1C4342610001F7EC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3290B9BD1C4342610001F7EC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3290B9BE1C4342610001F7EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3290B9BF1C4342610001F7EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3290B9C01C4342610001F7EC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3290B9C11C4342610001F7EC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3290B9C21C4342610001F7EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3290B9C31C4342610001F7EC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3290B9C41C4342610001F7EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3290B9CF1C4344E60001F7EC /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		33F1358DA5E88A95CE03CF43 /* Pods-IceBreaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBreaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceBreaker/Pods-IceBreaker.release.xcconfig"; sourceTree = "<group>"; };
 		3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IceBreaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +86,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3290B9C51C4342610001F7EC /* AudioToolbox.framework in Frameworks */,
+				3290B9C61C4342610001F7EC /* CFNetwork.framework in Frameworks */,
+				3290B9C71C4342610001F7EC /* CoreGraphics.framework in Frameworks */,
+				3290B9C81C4342610001F7EC /* CoreLocation.framework in Frameworks */,
+				3290B9C91C4342610001F7EC /* libsqlite3.tbd in Frameworks */,
+				3290B9CA1C4342610001F7EC /* libz.tbd in Frameworks */,
+				3290B9CB1C4342610001F7EC /* Security.framework in Frameworks */,
+				3290B9CC1C4342610001F7EC /* StoreKit.framework in Frameworks */,
+				3290B9CD1C4342610001F7EC /* SystemConfiguration.framework in Frameworks */,
 				327149931C23A80900421132 /* MapKit.framework in Frameworks */,
 				741651FBA0579992F8ACF368 /* Pods_IceBreaker.framework in Frameworks */,
 			);
@@ -91,6 +120,15 @@
 		2858AA86C906EEB8E8F7D1D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3290B9BC1C4342610001F7EC /* AudioToolbox.framework */,
+				3290B9BD1C4342610001F7EC /* CFNetwork.framework */,
+				3290B9BE1C4342610001F7EC /* CoreGraphics.framework */,
+				3290B9BF1C4342610001F7EC /* CoreLocation.framework */,
+				3290B9C01C4342610001F7EC /* libsqlite3.tbd */,
+				3290B9C11C4342610001F7EC /* libz.tbd */,
+				3290B9C21C4342610001F7EC /* Security.framework */,
+				3290B9C31C4342610001F7EC /* StoreKit.framework */,
+				3290B9C41C4342610001F7EC /* SystemConfiguration.framework */,
 				3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */,
 			);
 			name = Frameworks;
@@ -122,6 +160,7 @@
 		327149631C23A59D00421132 /* IceBreaker */ = {
 			isa = PBXGroup;
 			children = (
+				3290B9CE1C4344C30001F7EC /* Models */,
 				327149641C23A59D00421132 /* AppDelegate.swift */,
 				327149661C23A59D00421132 /* LoginViewController.swift */,
 				327149941C23AAB100421132 /* PeopleNearbyViewController.swift */,
@@ -151,6 +190,14 @@
 				327149861C23A59E00421132 /* Info.plist */,
 			);
 			path = IceBreakerUITests;
+			sourceTree = "<group>";
+		};
+		3290B9CE1C4344C30001F7EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3290B9CF1C4344E60001F7EC /* Profile.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		568CD43B16E834949185767F /* Pods */ = {
@@ -344,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				327149671C23A59D00421132 /* LoginViewController.swift in Sources */,
+				3290B9D01C4344E60001F7EC /* Profile.swift in Sources */,
 				327149651C23A59D00421132 /* AppDelegate.swift in Sources */,
 				327149971C23ADF300421132 /* PersonTableViewCell.swift in Sources */,
 				327149991C23B13200421132 /* PersonDetailViewController.swift in Sources */,
