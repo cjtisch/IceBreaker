@@ -28,6 +28,7 @@
 		3290B9CC1C4342610001F7EC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9C31C4342610001F7EC /* StoreKit.framework */; };
 		3290B9CD1C4342610001F7EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9C41C4342610001F7EC /* SystemConfiguration.framework */; };
 		3290B9D01C4344E60001F7EC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290B9CF1C4344E60001F7EC /* Profile.swift */; settings = {ASSET_TAGS = (); }; };
+		3290B9D21C434B260001F7EC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290B9D11C434B260001F7EC /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		741651FBA0579992F8ACF368 /* Pods_IceBreaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		3290B9C31C4342610001F7EC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3290B9C41C4342610001F7EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3290B9CF1C4344E60001F7EC /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		3290B9D11C434B260001F7EC /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		33F1358DA5E88A95CE03CF43 /* Pods-IceBreaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBreaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceBreaker/Pods-IceBreaker.release.xcconfig"; sourceTree = "<group>"; };
 		3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IceBreaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 				327149941C23AAB100421132 /* PeopleNearbyViewController.swift */,
 				327149961C23ADF300421132 /* PersonTableViewCell.swift */,
 				327149981C23B13200421132 /* PersonDetailViewController.swift */,
+				3290B9D11C434B260001F7EC /* SignUpViewController.swift */,
 				327149681C23A59D00421132 /* Main.storyboard */,
 				3271496B1C23A59D00421132 /* Assets.xcassets */,
 				3271496D1C23A59D00421132 /* LaunchScreen.storyboard */,
@@ -391,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				327149671C23A59D00421132 /* LoginViewController.swift in Sources */,
+				3290B9D21C434B260001F7EC /* SignUpViewController.swift in Sources */,
 				3290B9D01C4344E60001F7EC /* Profile.swift in Sources */,
 				327149651C23A59D00421132 /* AppDelegate.swift in Sources */,
 				327149971C23ADF300421132 /* PersonTableViewCell.swift in Sources */,

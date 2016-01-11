@@ -14,17 +14,16 @@ struct Profile {
     var password: String
     var firstName: String
     var lastName: String
-    var location: CLLocationCoordinate2D
+    var location: CLLocationCoordinate2D?
     var birthday: NSDate
     var profileImageLink: String?
     var summary: String?
     
-    init(email: String, password: String, firstName: String, lastName: String, location: CLLocationCoordinate2D, birthday: NSDate) {
+    init(email: String, password: String, firstName: String, lastName: String, birthday: NSDate) {
         self.email = email
         self.password = password
         self.firstName = firstName
         self.lastName = lastName
-        self.location = location
         self.birthday = birthday
     }
 }
