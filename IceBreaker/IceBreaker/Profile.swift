@@ -10,6 +10,7 @@ import Foundation
 import CoreLocation
 
 struct Profile {
+    var username: String
     var email: String
     var password: String
     var firstName: String
@@ -19,7 +20,8 @@ struct Profile {
     var profileImageLink: String?
     var summary: String?
     
-    init(email: String, password: String, firstName: String, lastName: String, birthday: NSDate) {
+    init(username: String, email: String, password: String, firstName: String, lastName: String, birthday: NSDate) {
+        self.username = username
         self.email = email
         self.password = password
         self.firstName = firstName

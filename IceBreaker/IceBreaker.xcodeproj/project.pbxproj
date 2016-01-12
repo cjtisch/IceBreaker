@@ -15,9 +15,9 @@
 		3271497A1C23A59E00421132 /* IceBreakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149791C23A59E00421132 /* IceBreakerTests.swift */; };
 		327149851C23A59E00421132 /* IceBreakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149841C23A59E00421132 /* IceBreakerUITests.swift */; };
 		327149931C23A80900421132 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327149921C23A80900421132 /* MapKit.framework */; };
-		327149951C23AAB100421132 /* PeopleNearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149941C23AAB100421132 /* PeopleNearbyViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		327149971C23ADF300421132 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149961C23ADF300421132 /* PersonTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		327149991C23B13200421132 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149981C23B13200421132 /* PersonDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		327149951C23AAB100421132 /* PeopleNearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149941C23AAB100421132 /* PeopleNearbyViewController.swift */; };
+		327149971C23ADF300421132 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149961C23ADF300421132 /* PersonTableViewCell.swift */; };
+		327149991C23B13200421132 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327149981C23B13200421132 /* PersonDetailViewController.swift */; };
 		3290B9C51C4342610001F7EC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9BC1C4342610001F7EC /* AudioToolbox.framework */; };
 		3290B9C61C4342610001F7EC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9BD1C4342610001F7EC /* CFNetwork.framework */; };
 		3290B9C71C4342610001F7EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9BE1C4342610001F7EC /* CoreGraphics.framework */; };
@@ -27,9 +27,10 @@
 		3290B9CB1C4342610001F7EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9C21C4342610001F7EC /* Security.framework */; };
 		3290B9CC1C4342610001F7EC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9C31C4342610001F7EC /* StoreKit.framework */; };
 		3290B9CD1C4342610001F7EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3290B9C41C4342610001F7EC /* SystemConfiguration.framework */; };
-		3290B9D01C4344E60001F7EC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290B9CF1C4344E60001F7EC /* Profile.swift */; settings = {ASSET_TAGS = (); }; };
-		3290B9D21C434B260001F7EC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290B9D11C434B260001F7EC /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3290B9D01C4344E60001F7EC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290B9CF1C4344E60001F7EC /* Profile.swift */; };
+		3290B9D21C434B260001F7EC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290B9D11C434B260001F7EC /* SignUpViewController.swift */; };
 		741651FBA0579992F8ACF368 /* Pods_IceBreaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */; };
+		BFFB214E1C44EB420047613C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB214D1C44EB420047613C /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		3290B9D11C434B260001F7EC /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		33F1358DA5E88A95CE03CF43 /* Pods-IceBreaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBreaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceBreaker/Pods-IceBreaker.release.xcconfig"; sourceTree = "<group>"; };
 		3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IceBreaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFB214D1C44EB420047613C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				327149961C23ADF300421132 /* PersonTableViewCell.swift */,
 				327149981C23B13200421132 /* PersonDetailViewController.swift */,
 				3290B9D11C434B260001F7EC /* SignUpViewController.swift */,
+				BFFB214D1C44EB420047613C /* SettingsViewController.swift */,
 				327149681C23A59D00421132 /* Main.storyboard */,
 				3271496B1C23A59D00421132 /* Assets.xcassets */,
 				3271496D1C23A59D00421132 /* LaunchScreen.storyboard */,
@@ -400,6 +403,7 @@
 				327149971C23ADF300421132 /* PersonTableViewCell.swift in Sources */,
 				327149991C23B13200421132 /* PersonDetailViewController.swift in Sources */,
 				327149951C23AAB100421132 /* PeopleNearbyViewController.swift in Sources */,
+				BFFB214E1C44EB420047613C /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
