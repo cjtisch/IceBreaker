@@ -61,7 +61,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             user.email = profile.email
             
             //custom PFUser fields
-            user["birthday"] = profile.birthday
+            user["birthday"]  = profile.birthday
+            user["firstName"] = profile.firstName
+            user["lastName"]  = profile.lastName
             
             user.signUpInBackgroundWithBlock({ (success, error) -> Void in
                 if let error = error {

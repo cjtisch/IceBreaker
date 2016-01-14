@@ -48,6 +48,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var currentUser = PFUser.currentUser()
+        if currentUser != nil {
+            self.performSegueWithIdentifier("loginSegue", sender: self)
+        }
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

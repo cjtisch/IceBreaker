@@ -30,6 +30,8 @@
 		3290B9D01C4344E60001F7EC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290B9CF1C4344E60001F7EC /* Profile.swift */; };
 		3290B9D21C434B260001F7EC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290B9D11C434B260001F7EC /* SignUpViewController.swift */; };
 		741651FBA0579992F8ACF368 /* Pods_IceBreaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */; };
+		BFDAC7C81C4732F100E61141 /* EventsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAC7C71C4732F100E61141 /* EventsMapViewController.swift */; };
+		BFDAC7CA1C4735FA00E61141 /* YourProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAC7C91C4735FA00E61141 /* YourProfileViewController.swift */; };
 		BFFB214E1C44EB420047613C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB214D1C44EB420047613C /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		3290B9D11C434B260001F7EC /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		33F1358DA5E88A95CE03CF43 /* Pods-IceBreaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBreaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceBreaker/Pods-IceBreaker.release.xcconfig"; sourceTree = "<group>"; };
 		3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IceBreaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFDAC7C71C4732F100E61141 /* EventsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsMapViewController.swift; sourceTree = "<group>"; };
+		BFDAC7C91C4735FA00E61141 /* YourProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourProfileViewController.swift; sourceTree = "<group>"; };
 		BFFB214D1C44EB420047613C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +177,8 @@
 				3290B9D11C434B260001F7EC /* SignUpViewController.swift */,
 				BFFB214D1C44EB420047613C /* SettingsViewController.swift */,
 				327149681C23A59D00421132 /* Main.storyboard */,
+				BFDAC7C91C4735FA00E61141 /* YourProfileViewController.swift */,
+				BFDAC7C71C4732F100E61141 /* EventsMapViewController.swift */,
 				3271496B1C23A59D00421132 /* Assets.xcassets */,
 				3271496D1C23A59D00421132 /* LaunchScreen.storyboard */,
 				327149701C23A59D00421132 /* Info.plist */,
@@ -285,6 +291,7 @@
 				TargetAttributes = {
 					327149601C23A59D00421132 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = L4G2DJF9CA;
 					};
 					327149741C23A59E00421132 = {
 						CreatedOnToolsVersion = 7.0;
@@ -397,7 +404,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				327149671C23A59D00421132 /* LoginViewController.swift in Sources */,
+				BFDAC7C81C4732F100E61141 /* EventsMapViewController.swift in Sources */,
 				3290B9D21C434B260001F7EC /* SignUpViewController.swift in Sources */,
+				BFDAC7CA1C4735FA00E61141 /* YourProfileViewController.swift in Sources */,
 				3290B9D01C4344E60001F7EC /* Profile.swift in Sources */,
 				327149651C23A59D00421132 /* AppDelegate.swift in Sources */,
 				327149971C23ADF300421132 /* PersonTableViewCell.swift in Sources */,
@@ -544,6 +553,7 @@
 			baseConfigurationReference = 221AD7F58B98CD57B750FF90 /* Pods-IceBreaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IceBreaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tisch.IceBreaker;
@@ -556,6 +566,7 @@
 			baseConfigurationReference = 33F1358DA5E88A95CE03CF43 /* Pods-IceBreaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IceBreaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tisch.IceBreaker;
