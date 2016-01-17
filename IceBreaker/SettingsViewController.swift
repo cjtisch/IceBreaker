@@ -16,6 +16,10 @@ class SettingsViewController: UIViewController {
         performSegueWithIdentifier("logOutSegue", sender: self)
     }
     
+    @IBAction func exitButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

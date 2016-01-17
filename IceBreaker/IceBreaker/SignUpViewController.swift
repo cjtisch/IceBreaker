@@ -19,6 +19,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var textFields: [UITextField]!
     var activeTextField: UITextField?
@@ -65,7 +66,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             user["firstName"] = profile.firstName
             user["lastName"]  = profile.lastName
             
+            activityIndicator.startAnimating()
+            
             user.signUpInBackgroundWithBlock({ (success, error) -> Void in
+                self.activityIndicator.stopAnimating()
                 if let error = error {
                     let errorString = error.userInfo["error"] as? NSString
                     var title = "Error"
@@ -76,13 +80,15 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
 
                 } else {
                     var title = "Success"
-                    var message = "Your account has been created"
+                    var message = "Your account has been created. A verification message has been sent to your e-mail."
                     let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: {(action) -> Void in
+                            self.navigationController?.popViewControllerAnimated(true)
+                    }))
                     self.presentViewController(alert, animated: true, completion: nil)
+                    //TODO would like to back out of the create account screen here, don't know how
                 }
             })
-            
         }
     }
 }

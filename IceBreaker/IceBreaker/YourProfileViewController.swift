@@ -9,11 +9,15 @@
 import UIKit
 import Parse
 
-class YourProfileViewController: UIViewController {
+class YourProfileViewController: UIViewController, UIBarPositioningDelegate {
 
     @IBOutlet weak var nameTextField: UILabel!
     @IBOutlet weak var userNameTextField: UILabel!
     @IBOutlet weak var emailTextField: UILabel!
+
+    @IBAction func exitButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +38,10 @@ class YourProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
+        return UIBarPosition.TopAttached
+    }
+    
     /*
     // MARK: - Navigation
 
