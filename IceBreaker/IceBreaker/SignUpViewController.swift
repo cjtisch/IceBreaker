@@ -26,13 +26,19 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     var previousTextFieldButton: UIBarButtonItem!
     var nextTextFieldButton: UIBarButtonItem!
     let keyboardAccessoryInputView = UIToolbar()
+    let datePickerView:UIDatePicker = UIDatePicker()
+    let dateFormatter = NSDateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textFields = [firstNameTextField, lastNameTextField, usernameTextField, emailTextField, birthdayTextField, passwordTextField, confirmPasswordTextField]
         
+        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+        
         setupKeyboardAccessoryToolbar()
+        setupDatePicker()
     }
 
     func textFieldDidBeginEditing(textField: UITextField) {
@@ -86,6 +92,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         activeTextField?.resignFirstResponder()
     }
     
+    func setupDatePicker() {
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        birthdayTextField.inputView = datePickerView
+        datePickerView.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
     @IBAction func next(sender: UIButton) {
         if let firstName = firstNameTextField.text, lastName = lastNameTextField.text, userName = usernameTextField.text, email = emailTextField.text, birthday = birthdayTextField.text, password = passwordTextField.text {
             let profile = Profile(username: userName, email: email, password: password, firstName: firstName, lastName: lastName, birthday: NSDate())
@@ -131,17 +143,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func birthdayTextFieldAction(sender: UITextField) {
-        let datePickerView:UIDatePicker = UIDatePicker()
-        datePickerView.datePickerMode = UIDatePickerMode.Date
-        sender.inputView = datePickerView
-        datePickerView.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
-    }
-    
     func datePickerValueChanged(sender:UIDatePicker) {
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
-        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
         birthdayTextField.text = dateFormatter.stringFromDate(sender.date)
     }
 }
