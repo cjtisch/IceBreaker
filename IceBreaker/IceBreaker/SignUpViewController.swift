@@ -21,31 +21,25 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    @IBAction func birthdayTextFieldAction(sender: UITextField) {
-        let datePickerView:UIDatePicker = UIDatePicker()
-        datePickerView.datePickerMode = UIDatePickerMode.Date
-        sender.inputView = datePickerView
-        datePickerView.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
-    }
-    
-    func datePickerValueChanged(sender:UIDatePicker) {
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
-        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
-        birthdayTextField.text = dateFormatter.stringFromDate(sender.date)
-    }
-    
     var textFields: [UITextField]!
     var activeTextField: UITextField?
+    var previousTextFieldButton: UIBarButtonItem!
+    var nextTextFieldButton: UIBarButtonItem!
+    let keyboardAccessoryInputView = UIToolbar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textFields = [firstNameTextField, lastNameTextField, usernameTextField, emailTextField, birthdayTextField, passwordTextField, confirmPasswordTextField]
+        
+        setupKeyboardAccessoryToolbar()
     }
 
     func textFieldDidBeginEditing(textField: UITextField) {
         activeTextField = textField
+        
+        previousTextFieldButton.enabled = textField != textFields.first
+        nextTextFieldButton.enabled = textField != textFields.last
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
@@ -59,6 +53,37 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     func validateInputs() -> Bool {
         return !firstNameTextField.text!.isEmpty && !lastNameTextField.text!.isEmpty && !usernameTextField.text!.isEmpty && !emailTextField.text!.isEmpty && !birthdayTextField.text!.isEmpty && !passwordTextField.text!.isEmpty && !confirmPasswordTextField.text!.isEmpty
+    }
+    
+    func setupKeyboardAccessoryToolbar() {
+        keyboardAccessoryInputView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 40)
+        
+        previousTextFieldButton = UIBarButtonItem(title: "Previous", style: .Plain, target: self, action: Selector("goToPreviousTextField"))
+        nextTextFieldButton = UIBarButtonItem(title: "Next", style: .Plain, target: self, action: Selector("goToNextTextField"))
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Done", style: .Done, target: self, action: Selector("done"))
+        
+        keyboardAccessoryInputView.items = [previousTextFieldButton, nextTextFieldButton, flexibleSpace, doneButton]
+        
+        for textField in textFields {
+            textField.inputAccessoryView = keyboardAccessoryInputView
+        }
+    }
+    
+    func goToPreviousTextField() {
+        if let activeTextField = activeTextField, index = textFields.indexOf(activeTextField) where index > 0 {
+            textFields[index-1].becomeFirstResponder()
+        }
+    }
+    
+    func goToNextTextField() {
+        if let activeTextField = activeTextField, index = textFields.indexOf(activeTextField) where index < textFields.count - 1 {
+            textFields[index+1].becomeFirstResponder()
+        }
+    }
+    
+    func done() {
+        activeTextField?.resignFirstResponder()
     }
     
     @IBAction func next(sender: UIButton) {
@@ -104,5 +129,19 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 }
             })
         }
+    }
+    
+    @IBAction func birthdayTextFieldAction(sender: UITextField) {
+        let datePickerView:UIDatePicker = UIDatePicker()
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        sender.inputView = datePickerView
+        datePickerView.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    func datePickerValueChanged(sender:UIDatePicker) {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+        birthdayTextField.text = dateFormatter.stringFromDate(sender.date)
     }
 }
