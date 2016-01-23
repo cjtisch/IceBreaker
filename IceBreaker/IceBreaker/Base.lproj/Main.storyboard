@@ -521,8 +521,10 @@
                                             <constraint firstAttribute="height" constant="30" id="i9A-4U-gTp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <textInputTraits key="textInputTraits"/>
                                         <connections>
+                                            <action selector="birthdayTextField:" destination="dlK-NL-0e5" eventType="editingDidEnd" id="R90-WR-A5w"/>
+                                            <action selector="birthdayTextFieldAction:" destination="dlK-NL-0e5" eventType="editingDidBegin" id="wwQ-UM-Hf0"/>
                                             <outlet property="delegate" destination="dlK-NL-0e5" id="f8V-ai-hD8"/>
                                         </connections>
                                     </textField>
