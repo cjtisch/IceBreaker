@@ -588,6 +588,7 @@
                         <outlet property="lastNameTextField" destination="PA7-3d-fi0" id="T1j-tH-Vh0"/>
                         <outlet property="nextButton" destination="PIj-0O-zPh" id="qeA-VG-KAm"/>
                         <outlet property="passwordTextField" destination="94o-Vp-Rp1" id="Gzl-Ee-Xio"/>
+                        <outlet property="scrollView" destination="xUk-SJ-Iga" id="dEZ-ha-N35"/>
                         <outlet property="usernameTextField" destination="5YS-uh-5vf" id="cw2-fP-iSU"/>
                     </connections>
                 </viewController>
