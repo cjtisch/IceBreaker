@@ -32,6 +32,7 @@
 		741651FBA0579992F8ACF368 /* Pods_IceBreaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */; };
 		BFDAC7C81C4732F100E61141 /* EventsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAC7C71C4732F100E61141 /* EventsMapViewController.swift */; };
 		BFDAC7CA1C4735FA00E61141 /* YourProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAC7C91C4735FA00E61141 /* YourProfileViewController.swift */; };
+		BFE0D4CB1C56F9FB00D04B17 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0D4CA1C56F9FB00D04B17 /* ForgotPasswordViewController.swift */; };
 		BFFB214E1C44EB420047613C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB214D1C44EB420047613C /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		3F260DCF9626F768F284A44D /* Pods_IceBreaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IceBreaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDAC7C71C4732F100E61141 /* EventsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsMapViewController.swift; sourceTree = "<group>"; };
 		BFDAC7C91C4735FA00E61141 /* YourProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourProfileViewController.swift; sourceTree = "<group>"; };
+		BFE0D4CA1C56F9FB00D04B17 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		BFFB214D1C44EB420047613C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 				3290B9D11C434B260001F7EC /* SignUpViewController.swift */,
 				BFFB214D1C44EB420047613C /* SettingsViewController.swift */,
 				327149681C23A59D00421132 /* Main.storyboard */,
+				BFE0D4CA1C56F9FB00D04B17 /* ForgotPasswordViewController.swift */,
 				BFDAC7C91C4735FA00E61141 /* YourProfileViewController.swift */,
 				BFDAC7C71C4732F100E61141 /* EventsMapViewController.swift */,
 				3271496B1C23A59D00421132 /* Assets.xcassets */,
@@ -405,6 +408,7 @@
 			files = (
 				327149671C23A59D00421132 /* LoginViewController.swift in Sources */,
 				BFDAC7C81C4732F100E61141 /* EventsMapViewController.swift in Sources */,
+				BFE0D4CB1C56F9FB00D04B17 /* ForgotPasswordViewController.swift in Sources */,
 				3290B9D21C434B260001F7EC /* SignUpViewController.swift in Sources */,
 				BFDAC7CA1C4735FA00E61141 /* YourProfileViewController.swift in Sources */,
 				3290B9D01C4344E60001F7EC /* Profile.swift in Sources */,
