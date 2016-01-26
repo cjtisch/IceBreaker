@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Parse
 
 class ForgotPasswordViewController: UIViewController {
-
+    
+    @IBOutlet weak var emailAddressField: UITextField!
+    @IBOutlet weak var warningNoticeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +28,22 @@ class ForgotPasswordViewController: UIViewController {
 
     @IBAction func exitButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func passwordResetButton(sender: AnyObject) {
+        if emailAddressField.text!.isEmpty {
+            warningNoticeLabel.text = "Enter a valid e-mail address"
+        } else {
+            warningNoticeLabel.text = ""
+            self.view.endEditing(true)
+            let emailResetTarget = emailAddressField.text!
+            PFUser.requestPasswordResetForEmailInBackground(emailResetTarget)
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     /*
